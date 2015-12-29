@@ -1,0 +1,196 @@
+/**********************************************************************
+RESET
+**********************************************************************/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6,
+ol, p, pre, table, ul, dd, dt, li, tbody, td, tfoot, th, thead, tr,
+button, del, ins, map, object, a, abbr, acronym, b, bdo, big, br, cite,
+code, dfn, em, i, img, kbd, q, samp, small, span, strong, sub, sup, tt,
+var, legend, fieldset {
+  margin: 0;
+  padding: 0;
+}
+img {
+  border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section {
+  display: block;
+}
+*:focus {
+  outline: none;
+}
+a {
+    text-decoration: none;
+} 
+
+/**********************************************************************
+FONTS
+**********************************************************************/
+@font-face {
+  font-family: 'LiberationSans';
+  src: url('fonts/LiberationSans-Regular.eot');
+  src: url('fonts/LiberationSans-Regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/LiberationSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LiberationSans';
+  src: url('fonts/LiberationSans-Bold.eot');
+  src: url('fonts/LiberationSans-Bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/LiberationSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LiberationSans';
+  src: url('fonts/LiberationSans-Italic.eot');
+  src: url('fonts/LiberationSans-Italic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/LiberationSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/**********************************************************************
+GENERAL STYLING
+**********************************************************************/
+html {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+}
+body {
+  height: 100%;
+  min-height: 100%;
+  font: 10pt/1.4 LiberationSans, Helvetica, sans-serif;
+  color: #565656;
+  background: #efedea url(img/main_bg.png);
+}
+h1 {
+  margin-bottom: 10px;
+  font-size: 20pt;
+  color: #135990;
+}
+h2 {
+  margin-bottom: 10px;
+  font-size: 18pt;
+  color: #135990;
+}
+h3 {
+  margin-bottom: 5px;
+  font-size: 16pt;
+  color: #135990;
+}
+h4 {
+  margin-bottom: 5px;
+  font-size: 14pt;
+  color: #135990;
+}
+p {
+  margin-bottom: 1em;
+}
+a {
+  text-decoration: none;
+  color: #135990;
+  transition: all .3s ease 0s;
+}
+a:hover {
+  color: #007cdc;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+input, select, textarea {
+  padding: 8px 6px;
+  font: 10pt/1.3 LiberationSans, Helvetica, sans-serif;
+  color: #666;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+input {
+  padding: 9px 6px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { /* Safari only */
+    ::i-block-chrome,select {
+     line-height: 31px;
+     text-indent: 6px;
+  }
+}
+::selection {
+  background: #135990;
+  color: #fff;
+}
+::-moz-selection {
+  background: #135990;
+  color: #fff;
+}
+
+/**********************************************************************
+STRUCTURE
+**********************************************************************/
+
+header {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    background: #9a958c url(img/footer_bg.png);
+}
+
+#logo {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+#logo:hover{
+    padding: 5px;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-top: 1px;
+    font-size: 12pt;
+    list-style: none;
+}
+nav ul li {
+    float: left;
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    padding: 10px 22px;
+}
+nav ul li a:hover {
+    background: #f6f4f0;
+}
+nav ul li a.active {
+    border-bottom: 4px solid #e6e4e0;
+}
+
+#logo {
+    display: block;
+    float: left;
+}
+
+/************** Dividers and cleaners **************/
+.cleaner {
+  display: block;
+  clear: both;
+  height: 0;
+  content: '.';
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+}
