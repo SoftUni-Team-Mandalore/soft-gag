@@ -1,0 +1,83 @@
+main{
+    width:90%;
+    margin: auto;
+}
+
+section,aside{
+    display: inline-block;
+    vertical-align: top;
+    background-color: azure;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* section */
+section{
+    margin-left: 10%;
+    margin-right: 8%;
+    width: 40%;
+    padding: 1% 2%;
+}
+
+/** article **/
+article{
+    padding-bottom: 5%;
+    border-bottom: 2px solid lightgray;
+}
+article header{
+    margin-top: 2%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+article p{
+    cursor: hand;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 10px;
+	margin-top:1em;
+    background: -webkit-linear-gradient(lightgray 0%,white 55%, lightgray 65%, white 100%);
+    background: -o-linear-gradient(lightgray 0%,white 55%, lightgray 65%, white 100%);
+    background: -moz-linear-gradient(lightgray 0%,white 55%, lightgray 65%, white 100%);
+    background: linear-gradient(lightgray 0%,white 55%, lightgray 65%, white 100%);
+}
+article p.upvote:hover{
+    background: -webkit-linear-gradient(#CCFFCC 0%,#99FF99 48%,#33FF33 51%,#CCFFCC 100%);
+    background: -o-linear-gradient(#CCFFCC 0%,#99FF99 48%,#33FF33 51%,#CCFFCC 100%);
+    background: -moz-linear-gradient(#CCFFCC 0%,#99FF99 48%,#33FF33 51%,#CCFFCC 100%);
+    background: linear-gradient(#CCFFCC 0%,#99FF99 48%,#33FF33 51%,#CCFFCC 100%);
+}
+article p.downvote:hover{
+    background: -webkit-linear-gradient(#FFCCCC 0%,#FF9999 48%,#FF3333 51%,#FFCCCC 100%);
+    background: -o-linear-gradient(#FFCCCC 0%,#FF9999 48%,#FF3333 51%,#FFCCCC 100%);
+    background: -moz-linear-gradient(#FFCCCC 0%,#FF9999 48%,#FF3333 51%,#FFCCCC 100%);
+    background: linear-gradient(#FFCCCC 0%,#FF9999 48%,#FF3333 51%,#FFCCCC 100%);
+}
+article img{
+    display: block;
+    width: 80%;
+}
+
+/* aside */
+aside{
+    margin-top: 2%;
+    position: fixed;
+    width: 20%;
+	left: 60%;
+    padding: 1%;
+}
+aside figure
+{
+    margin: auto;
+    width: 60%;
+}
+aside figure img{
+    display: block;
+    height: 120px;
+    margin: auto;
+}
+aside figure figcaption{
+    text-align: center;
+}
