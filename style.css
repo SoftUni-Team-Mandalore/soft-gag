@@ -1,0 +1,55 @@
+/**********************************************************************
+RESET
+**********************************************************************/
+
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul, dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object, a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span, strong, sub, sup, tt, var, legend, fieldset {
+  margin: 0;
+  padding: 0;
+}
+img {
+  border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+*:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+
+/**********************************************************************
+LOG IN / REGISTER
+**********************************************************************/
+
+form {
+  width: 30%;
+  background-color: #FFD280;
+  padding: 30px;
+}
+h3 {
+  font-size: 1.7em;
+}
+.register_form_field {
+  font-size: 1.7em;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.register_form_field input {
+  font-size: 1em;
+  float: right;
+  padding: 2px;
+  border: none;
+}
+input[type="submit"] {
+  width: 200px;
+  height: 60px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 40px;
+  background-color: orange;
+  display: block;
+  margin: auto;
+}
