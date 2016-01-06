@@ -3,7 +3,7 @@ main{
     margin: auto;
 }
 
-section,aside{
+main section, main aside{
     display: inline-block;
     vertical-align: top;
     background-color: azure;
@@ -16,9 +16,8 @@ a{
 }
 /* section */
 section{
-    margin-left: 10%;
-    margin-right: 8%;
-    width: 40%;
+    margin-right: 3%;
+    width: 55%;
     padding: 1% 2%;
 }
 
@@ -61,23 +60,28 @@ article img{
 }
 
 /* aside */
-aside{
-    margin-top: 2%;
-    position: fixed;
+main aside{
+	position: fixed;
     width: 20%;
 	left: 60%;
     padding: 1%;
 }
-aside figure
+main aside figure
 {
     margin: auto;
     width: 60%;
 }
-aside figure img{
+main aside figure img{
     display: block;
-    height: 120px;
+    height: 100px;
     margin: auto;
 }
-aside figure figcaption{
+main aside figure figcaption{
     text-align: center;
+}
+
+@media screen and (max-height: 765px) {
+	main aside {
+		position: static;
+	}
 }
