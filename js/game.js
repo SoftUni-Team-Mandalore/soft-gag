@@ -105,6 +105,19 @@ function announceWinner() {
     exit();
 }
 
+function reset(){
+    document.getElementById("winner").innerHTML = "";
+    isPlayerOne = true;
+    for (var i = 0; i < cells.length; i++) {
+        cells[i].innerHTML = "";
+        cells[i].style.backgroundColor = "";
+    }
+
+    for (var i = 0; i < cells.length; i++) {
+        cells[i].addEventListener("click", listener, false);
+    }
+}
+
 function exit() {
     for (var i = 0; i < cells.length; i++) {   
         cells[i].removeEventListener("click", listener, false);
