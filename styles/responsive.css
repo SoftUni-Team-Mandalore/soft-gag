@@ -9,25 +9,104 @@
     main{
         width: 100%;
     }
-    #picturesMainContent{
+    #pictures-main-content{
         width:73%;
         margin-right: 0%;
     }
-    #picturesRecomendations{
+    #pictures-recommendations{
         left:78%;
 
         border-left: 2px solid lightgray;
     }
 
-    #picturesRecomendations figure img{
+    #pictures-recommendations figure img{
         height: 70px;
     }
 
-    #picturesRecomendations figure{
+    #pictures-recommendations figure{
         width: 100%;
     }
 
-    #picturesMainContent article p{
+    #pictures-main-content article p{
+        text-align: center;
+        font-weight: bold;
+        width: 40%;
+        padding: 2% 0;
+        margin: 2% auto;
+        font-size: 1.5em;
+    }
+    #pictures-main-content{
+        width:73%;
+        margin-right: 0%;
+    }
+    #pictures-recommendations{
+        left:78%;
+
+        border-left: 2px solid lightgray;
+    }
+
+    #pictures-recommendations figure img{
+        height: 70px;
+    }
+
+    #pictures-recommendations figure{
+        width: 100%;
+    }
+
+    #pictures-main-content article p{
+        text-align: center;
+        font-weight: bold;
+        width: 40%;
+        padding: 2% 0;
+        margin: 2% auto;
+        font-size: 1.5em;
+    }
+
+    #gifs-main-content{
+        width:73%;
+        margin-right: 0%;
+    }
+    #gifs-recommendations{
+        left:78%;
+
+        border-left: 2px solid lightgray;
+    }
+
+    #gifs-recommendations figure img{
+        height: 70px;
+    }
+
+    #gifs-recommendations figure{
+        width: 100%;
+    }
+
+    #gifs-main-content article p{
+        text-align: center;
+        font-weight: bold;
+        width: 40%;
+        padding: 2% 0;
+        margin: 2% auto;
+        font-size: 1.5em;
+    }
+    #gifs-main-content{
+        width:73%;
+        margin-right: 0%;
+    }
+    #gifs-recommendations{
+        left:78%;
+
+        border-left: 2px solid lightgray;
+    }
+
+    #gifs-recommendations figure img{
+        height: 70px;
+    }
+
+    #gifs-recommendations figure{
+        width: 100%;
+    }
+
+    #gifs-main-content article p{
         text-align: center;
         font-weight: bold;
         width: 40%;
@@ -78,24 +157,24 @@
 }
 
 @media screen and (max-width: 640px){
-    #picturesRecomendations{
+    #pictures-recommendations{
         display: none;
     }
 
-    #picturesMainContent{
+    #pictures-main-content{
         width: 100%;
     }
 
-    #picturesMainContent article header{
+    #pictures-main-content article header{
          text-align: center;
          font-size: 3em;
     }
 
-    #picturesMainContent article img{
+    #pictures-main-content article img{
         width: 100%;
     }
 
-    #picturesMainContent article p{
+    #pictures-main-content article p{
         text-align: center;
         font-weight: bold;
         display: block;
@@ -105,7 +184,38 @@
         font-size: 2em;
     }
 
-    #picturesMainContent article{
+    #pictures-main-content article{
+        padding-bottom: 0;
+    }
+
+    #gifs-recommendations{
+        display: none;
+    }
+
+    #gifs-main-content{
+        width: 100%;
+    }
+
+    #gifs-main-content article header{
+         text-align: center;
+         font-size: 3em;
+    }
+
+    #gifs-main-content article img{
+        width: 100%;
+    }
+
+    #gifs-main-content article p{
+        text-align: center;
+        font-weight: bold;
+        display: block;
+        width: 100%;
+        padding: 2% 0;
+        margin: 2% auto;
+        font-size: 2em;
+    }
+
+    #gifs-main-content article{
         padding-bottom: 0;
     }
 
